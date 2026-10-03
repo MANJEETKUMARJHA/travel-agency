@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import Navbar from './components/Navbar'
 import './App.css'
 import './Planner.css'
 import './Map.css'
@@ -28,11 +29,7 @@ export default function App() {
   return (
     <main>
       <section className="hero section-shell">
-        <nav className="nav">
-          <a className="brand" href="#top">ROAM <i>/ 01</i></a>
-          <div className="nav-links"><a href="#stories">Explore</a><a href="#map">Journeys</a><a href="#feelings">Journal</a><a href="#about">About</a></div>
-          <button className="menu-button" aria-label="Open menu">≡</button>
-        </nav>
+        <Navbar />
         <div className="hero-copy" id="top">
           <h1>GO SOMEWHERE.<br />YOU HAVEN’T BEEN.</h1>
           <p>Trips designed around your mood,<br />not a checklist.</p><div className="marker-line" />
